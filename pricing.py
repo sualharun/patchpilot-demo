@@ -7,7 +7,7 @@ BULK_DISCOUNT_PERCENT = 15
 
 # Orders of BULK_THRESHOLD units or more receive the bulk discount.
 def bulk_discount_percent(quantity):
-    if quantity > BULK_THRESHOLD:
+    if quantity >= BULK_THRESHOLD:
         return BULK_DISCOUNT_PERCENT
     return 0
 
